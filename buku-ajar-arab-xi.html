@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buku Ajar Bahasa Arab Kelas XI</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fff8ef;--card:#fff;--ink:#2b2a33;--mut:#6b6877;--p:#ff8fab;--s:#7bc8f6;--g:#8fd9a8;--y:#ffd666;--line:#f0e2d0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1e1b26;--card:#2a2635;--ink:#f4f1fa;--mut:#aaa5b8;--line:#3d3750}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1e1b26;--card:#2a2635;--ink:#f4f1fa;--mut:#aaa5b8;--line:#3d3750}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+.ar{font-family:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;direction:rtl;font-size:1.5em;line-height:1.9}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;overflow-x:auto;padding:8px 10px;background:var(--bg);border-bottom:1px solid var(--line)}
+nav button{flex:none;border:0;border-radius:99px;padding:8px 14px;background:var(--card);color:var(--ink);font-weight:600;border:1px solid var(--line)}
+nav button.on{background:var(--p);color:#fff;border-color:var(--p)}
+main{max-width:760px;margin:0 auto;padding:16px}
+section{display:none}section.on{display:block}
+.cover{text-align:center;padding:40px 16px;border-radius:28px;background:linear-gradient(160deg,var(--y),var(--p) 60%,var(--s));color:#2b2a33}
+.cover .ar{font-size:2.6em;margin:8px 0}
+.cover h1{margin:6px 0;font-size:1.5rem}
+.cover p{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;margin:12px 0}
+h2{margin:8px 0 4px}h3{margin:16px 0 6px}
+.btn{border:0;border-radius:14px;padding:10px 16px;font-weight:700;background:var(--s);color:#10243a;margin:3px}
+.btn.p{background:var(--p);color:#fff}.btn.g{background:var(--g);color:#10321c}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.mf{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:18px;padding:12px 8px;text-align:center}
+.mf b{display:block;font-size:2em}.mf small{color:var(--mut)}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--line);padding:6px 10px;text-align:center}
+.toc button{display:block;width:100%;text-align:left;margin:6px 0;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:12px 14px;border-radius:14px;font-size:1rem}
+.opt{display:block;width:100%;margin:6px 0;padding:12px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink);font-size:1rem}
+.opt.ok{border-color:#2fb36b;background:#d8f5e3;color:#10321c}.opt.no{border-color:#e5586e;background:#fde0e5;color:#4a1020}
+.mc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mc button{min-height:64px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink);font-size:1rem;padding:4px}
+.mc button.up{background:var(--y);color:#2b2a33}.mc button.done{background:var(--g);color:#10321c;border-color:var(--g)}
+.w{display:inline-block;margin:4px;padding:6px 12px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--ink);font-size:1.3em}
+.ans{min-height:64px;border:2px dashed var(--p);border-radius:14px;padding:6px;direction:rtl}
+.msg{font-weight:700;min-height:1.6em}
+details{margin:6px 0}summary{cursor:pointer;font-weight:600}
+#zm{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:20;align-items:center;justify-content:center;padding:16px}
+.zb{background:var(--card);border-radius:24px;padding:18px;max-width:520px;width:100%;max-height:90%;overflow:auto}
+</style>
+</head>
+<body>
+<nav id="nav"></nav>
+<main>
+
+<section id="cover" class="on">
+<div class="cover">
+<div style="font-size:3rem">🌍✈️📚</div>
+<div class="ar">اللُّغَةُ الْعَرَبِيَّةُ</div>
+<h1>Buku Ajar Bahasa Arab</h1>
+<p><b>Fase F · Kelas XI · Semester 1</b></p>
+<p>Menyimak · Berbicara · Membaca · Menulis</p>
+<p style="margin-top:18px">Disusun oleh:<br><b>Asmaul Hilal Af (Alfalah)</b></p>
+<p>Pendidikan Bahasa Arab · FTIK UIN Prof. K.H. Saifuddin Zuhri Purwokerto</p>
+<p>2026</p>
+<button class="btn" onclick="show('toc')">Mulai Belajar 🚀</button>
+</div>
+</section>
+
+<section id="pengantar">
+<h2>Kata Pengantar</h2>
+<div class="card">
+<p>Puji syukur ke hadirat Allah SWT atas rahmat dan karunia-Nya sehingga Buku Ajar Bahasa Arab Kelas XI Fase F Semester 1 ini dapat diselesaikan dengan baik. Buku ini disusun berbasis Kurikulum Merdeka yang menekankan empat keterampilan berbahasa (<i>maharah</i>): menyimak (<i>istima’</i>), berbicara (<i>kalam</i>), membaca (<i>qira’ah</i>), dan menulis (<i>kitabah</i>).</p>
+<p>Setiap bab dilengkapi Capaian Pembelajaran (CP), Alokasi Jam Pelajaran (JP), kartu mufradat bergambar, penjelasan kaidah (<i>nahwu</i>), serta latihan dan permainan edukatif. Semoga buku ini membantu siswa belajar bahasa Arab secara aktif, komunikatif, dan bermakna.</p>
+<p>Purwokerto, Oktober 2026<br><b>Penyusun</b></p>
+</div>
+</section>
+
+<section id="toc">
+<h2>Daftar Isi</h2>
+<div class="toc card">
+<button onclick="show('cover')">🏠 Cover</button>
+<button onclick="show('pengantar')">💌 Kata Pengantar</button>
+<button onclick="show('cp')">🎯 CP &amp; JP</button>
+<button onclick="show('b1')">🧳 Bab 1 · السِّيَاحَةُ (Pariwisata)</button>
+<button onclick="show('b2')">💊 Bab 2 · الصِّحَّةُ (Kesehatan)</button>
+<button onclick="show('gm15')">🎮 15 Game Edukatif</button>
+<button onclick="show('pus')">📖 Daftar Pustaka &amp; Glosarium</button>
+</div>
+</section>
+
+<section id="cp">
+<h2>Capaian Pembelajaran &amp; JP</h2>
+<p>Fase F (Kelas XI MA/SMA) · Semester 1 · Total <b>36 JP</b> @ 45 menit</p>
+<div class="card"><h3>Bab 1: السِّيَاحَةُ (18 JP)</h3>
+<ul><li><b>11.1</b> Memahami fungsi sosial, struktur teks, dan unsur kebahasaan teks tema السِّيَاحَةُ (tindak tutur membandingkan).</li>
+<li><b>11.2</b> Menganalisis gagasan teks dengan memperhatikan tashrif fi’il madhi.</li>
+<li><b>11.3</b> Mendemonstrasikan tindak tutur membandingkan dengan fi’il madhi, lisan maupun tulisan.</li>
+<li><b>11.4</b> Mengonstruksi hasil analisis gagasan teks, lisan maupun tulisan.</li></ul></div>
+<div class="card"><h3>Bab 2: الصِّحَّةُ (18 JP)</h3>
+<ul><li><b>11.5</b> Memahami fungsi sosial, struktur teks, dan unsur kebahasaan teks tema الصِّحَّةُ (tindak tutur membandingkan).</li>
+<li><b>11.6</b> Menganalisis gagasan teks dengan memperhatikan tashrif fi’il mudhari’.</li>
+<li><b>11.7</b> Mendemonstrasikan tindak tutur membandingkan dengan fi’il mudhari’, lisan maupun tulisan.</li>
+<li><b>11.8</b> Mengonstruksi hasil analisis gagasan teks, lisan maupun tulisan.</li></ul></div>
+</section>
+
+<section id="b1"></section>
+<section id="b2"></section>
+
+<section id='gm15'><h2>🎮 15 Game Edukatif</h2><p>Bisa dimainkan sendiri atau berkelompok. Pilih game:</p><div class='grid' id='gml'></div><div class='card' id='gm' style='margin-top:12px'>Pilih game di atas 👆</div></section>
+<section id="pus">
+<h2>Daftar Pustaka</h2>
+<div class="card"><ol>
+<li>Kemendikbudristek. (2022). <i>Capaian Pembelajaran Bahasa Arab Fase F (Kelas XI &amp; XII)</i>. Jakarta: Kemendikbudristek.</li>
+<li>Kementerian Agama RI. (2020). <i>Bahasa Arab Kelas XI MA</i>. Jakarta: Direktorat KSKK Madrasah.</li></ol></div>
+<h2>Glosarium</h2>
+<div class="card"><ul>
+<li><b>Fi’il Madhi:</b> kata kerja lampau.</li><li><b>Fi’il Mudhari’:</b> kata kerja sekarang/akan datang.</li>
+<li><b>Isim Tafdhil:</b> bentuk perbandingan (lebih/paling).</li><li><b>Dhamir:</b> kata ganti pelaku.</li>
+<li><b>Istima’ / Qira’ah / Kitabah:</b> menyimak / membaca / menulis.</li></ul></div>
+</section>
+</main>
+
+<script>
+const D={
+b1:{t:'Bab 1 · السِّيَاحَةُ (Pariwisata)',k:'Fokus: Fi’il Madhi &amp; Isim Tafdhil',
+m:[['🏨','الْفُنْدُقُ','Hotel'],['🧳','الْحَقِيبَةُ','Tas / Koper'],['🗺️','الْخَرِيطَةُ','Peta'],['🎫','التَّذْكِرَةُ','Tiket'],['🚆','الْقِطَارُ','Kereta Api'],['⚓','الْمِينَاءُ','Pelabuhan'],['🚢','السَّفِينَةُ','Kapal Laut'],['📷','آلَةُ التَّصْوِيرِ','Kamera'],['🧭','الْمُرْشِدُ السِّيَاحِيُّ','Pemandu Wisata'],['🏛️','الْمَتْحَفُ التَّارِيخِيُّ','Museum Sejarah'],['⛰️','الْجَبَلُ','Gunung'],['🏞️','الْبُحَيْرَةُ','Danau']],
+s:[['صَوَّرَ','السَّائِحُ','الْمَنَاظِرَ','بِآلَةِ','التَّصْوِيرِ'],['الشَّاطِئُ','أَجْمَلُ','مِنَ','الْجَبَلِ'],['سَافَرَ','الطُّلَّابُ','إِلَى','الْجَبَلِ','بِالْقِطَارِ']],
+mat:'<p><b>Fungsi sosial:</b> menceritakan pengalaman perjalanan masa lalu (fi’il madhi), mengekspresikan kekaguman, dan membandingkan tempat wisata.</p><p><b>Fi’il Madhi</b> berubah sesuai dhamir. Contoh سَافَرَ:</p><table><tr><td class="ar">هُوَ</td><td class="ar">سَافَرَ</td></tr><tr><td class="ar">هُمَا</td><td class="ar">سَافَرَا</td></tr><tr><td class="ar">هُمْ</td><td class="ar">سَافَرُوا</td></tr><tr><td class="ar">هِيَ</td><td class="ar">سَافَرَتْ</td></tr><tr><td class="ar">أَنَا</td><td class="ar">سَافَرْتُ</td></tr><tr><td class="ar">نَحْنُ</td><td class="ar">سَافَرْنَا</td></tr></table><p><b>Isim Tafdhil:</b> أَفْعَلُ + مِنْ (lebih … daripada …).</p><p class="ar">الشَّاطِئُ أَجْمَلُ مِنَ الْجَبَلِ</p><p><i>Pantai itu lebih indah daripada gunung.</i></p>',
+n:'فِي الْعُطْلَةِ الصَّيْفِيَّةِ الْمَاضِيَةِ، سَافَرَتْ أُسْرَةُ نُورٍ إِلَى جَبَلِ بُرُومُو. رَكِبُوا الْقِطَارَ السَّرِيعَ مِنَ الْمَحَطَّةِ ثُمَّ نَزَلُوا فِي فُنْدُقٍ صَغِيرٍ قُرْبَ الْجَبَلِ. أَخَذَ الْأَبُ آلَةَ التَّصْوِيرِ وَصَوَّرَ الْمَنَاظِرَ الطَّبِيعِيَّةَ الرَّائِعَةَ. اشْتَرَتْ نُورٌ هَدِيَّةً تَذْكَارِيَّةً لِجَدَّتِهَا وَقَالَتْ: هَذِهِ الرِّحْلَةُ مُمْتِعَةٌ جِدًّا، وَالْجَبَلُ أَبْرَدُ مِنَ الْمَدِينَةِ.',
+q:['مَتَى سَافَرَتْ أُسْرَةُ نُورٍ إِلَى جَبَلِ بُرُومُو؟','مَا وَسِيلَةُ الْمُوَاصَلَاتِ الَّتِي رَكِبَتْهَا الْأُسْرَةُ؟','أَيْنَ نَزَلَتِ الْأُسْرَةُ بَعْدَ الْوُصُولِ؟','مَاذَا فَعَلَ الْأَبُ عِنْدَمَا وَصَلَ إِلَى الْجَبَلِ؟','لِمَاذَا اشْتَرَتْ نُورٌ الْهَدِيَّةَ التَّذْكَارِيَّةَ؟']},
+b2:{t:'Bab 2 · الصِّحَّةُ (Kesehatan)',k:'Fokus: Fi’il Mudhari’ &amp; Kata Tanya',
+m:[['💊','الصَّيْدَلِيَّةُ','Apotek'],['🍊','الْفِيتَامِينَاتُ','Vitamin'],['🧼','النَّظَافَةُ','Kebersihan'],['🥗','الْغِذَاءُ الصِّحِّيُّ','Makanan Sehat'],['🏃','الرِّيَاضَةُ الْبَدَنِيَّةُ','Olahraga Fisik'],['😴','النَّوْمُ الْكَافِي','Tidur Cukup'],['💧','الْمَاءُ الصَّافِي','Air Putih'],['🦷','السِّنُّ','Gigi'],['💪','الْعَضَلَاتُ','Otot'],['😷','الْكَمَّامَةُ','Masker'],['🧴','الْمُطَهِّرُ','Hand Sanitizer'],['🩺','الْفَحْصُ الطِّبِّيُّ','Pemeriksaan Medis']],
+s:[['يَشْرَبُ','الطَّالِبُ','الْمَاءَ','الصَّافِيَ','كُلَّ','صَبَاحٍ'],['أَغْسِلُ','وَجْهِي','وَأَسْنَانِي','كُلَّ','يَوْمٍ'],['تَلْبَسُ','هِنْدٌ','الْكَمَّامَةَ','فِي','الْمَكَانِ','الْمُزْدَحِمِ']],
+mat:'<p><b>Fungsi sosial:</b> mengekspresikan keluhan fisik, berkonsultasi dengan dokter, dan memberi saran pola hidup sehat.</p><p><b>Fi’il Mudhari’</b> diawali huruf mudhara’ah <span class="ar">أ ن ي ت</span>. Contoh يَشْرَبُ:</p><table><tr><td class="ar">هُوَ</td><td class="ar">يَشْرَبُ</td></tr><tr><td class="ar">هُمْ</td><td class="ar">يَشْرَبُونَ</td></tr><tr><td class="ar">هِيَ</td><td class="ar">تَشْرَبُ</td></tr><tr><td class="ar">أَنْتَ</td><td class="ar">تَشْرَبُ</td></tr><tr><td class="ar">أَنَا</td><td class="ar">أَشْرَبُ</td></tr><tr><td class="ar">نَحْنُ</td><td class="ar">نَشْرَبُ</td></tr></table>',
+n:'تَحْرِصُ هِنْدٌ عَلَى صِحَّةِ جِسْمِهَا كُلَّ يَوْمٍ. هِيَ تَغْسِلُ يَدَيْهَا بِالْمُطَهِّرِ قَبْلَ تَنَاوُلِ الطَّعَامِ، وَتَلْبَسُ الْكَمَّامَةَ فِي الْأَمَاكِنِ الْمُزْدَحِمَةِ لِلْوِقَايَةِ مِنَ الْأَمْرَاضِ. تَأْكُلُ هِنْدٌ الْخُضَارَ وَالْفَوَاكِهَ، وَتَشْرَبُ مِنَ الْمَاءِ الصَّافِي كَثِيرًا. كَمَا تَنَامُ ثَمَانِيَ سَاعَاتٍ كُلَّ لَيْلَةٍ، وَتَقُولُ: «الْوِقَايَةُ خَيْرٌ مِنَ الْعِلَاجِ».',
+q:['كَيْفَ تُحَافِظُ هِنْدٌ عَلَى صِحَّةِ جِسْمِهَا قَبْلَ الطَّعَامِ؟','لِمَاذَا تَلْبَسُ هِنْدٌ الْكَمَّامَةَ؟','مَا الْأَطْعِمَةُ وَالْأَشْرِبَةُ الَّتِي تَتَنَاوَلُهَا هِنْدٌ؟','كَمْ سَاعَةً تَنَامُ هِنْدٌ فِي اللَّيْلِ؟']}
+};
+const $=s=>document.querySelector(s),sh=a=>[...a].sort(()=>Math.random()-.5);
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='ar-SA';u.rate=.8;speechSynthesis.speak(u)}catch(e){}}
+const V=[['cover','🏠'],['pengantar','💌 Pengantar'],['toc','📑 Isi'],['cp','🎯 CP'],['b1','🧳 Bab 1'],['b2','💊 Bab 2'],['gm15','🎮 15 Game'],['pus','📖 Pustaka']];
+$('#nav').innerHTML=V.map(v=>`<button data-v="${v[0]}" onclick="show('${v[0]}')">${v[1]}</button>`).join('');
+function show(v){document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===v));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo(0,0)}
+function chap(c){const d=D[c];
+$('#'+c).innerHTML=`<h2>${d.t}</h2><p>${d.k}</p>
+<h3>🃏 Kartu Mufradat <small>(ketuk untuk memperbesar &amp; mendengar)</small></h3>
+<div class="grid">${d.m.map((x,i)=>`<button class="mf" onclick="zoom('${c}',${i})"><b>${x[0]}</b><span class="ar" style="font-size:1.2em">${x[1]}</span><br><small>${x[2]}</small></button>`).join('')}</div>
+<h3>📘 Materi &amp; Kaidah</h3><div class="card">${d.mat}</div>
+<h3>🎧 Istima’</h3><div class="card"><button class="btn p" onclick="say(D.${c}.n)">🔊 Putar naskah</button>
+<details><summary>Lihat naskah</summary><p class="ar">${d.n}</p></details>
+<ol>${d.q.map(q=>`<li class="ar" style="font-size:1.2em">${q}</li>`).join('')}</ol></div>
+<h3>✍️ Latihan: Qira’ah, Terjemah &amp; Kitabah</h3><div id="${c}x"></div><h3>🎮 Game Seru</h3>
+<div class="card"><h3>1. Tebak Arti 🤔</h3><div id="${c}q"></div></div>
+<div class="card"><h3>2. Benar atau Salah ✅❌</h3><div id="${c}t"></div></div>
+<div class="card"><h3>3. Kartu Pasangan 🧠</h3><div id="${c}p"></div></div>
+<div class="card"><h3>4. Susun Kalimat 🧩</h3><div id="${c}s"></div></div>`;
+quiz(c);tf(c);mat(c);bld(c);lat(c)}
+function quiz(c){const m=D[c].m,L=sh(m).slice(0,5);let i=0,sc=0,el=$('#'+c+'q');
+(function r(){if(i>=L.length){el.innerHTML=`<p class="msg">Skor: ${sc}/${L.length} ${sc>3?'🎉':'💪'}</p><button class="btn g" onclick="quiz('${c}')">Main lagi</button>`;return}
+const x=L[i],o=sh([x,...sh(m.filter(y=>y!==x)).slice(0,3)]);
+el.innerHTML=`<p>Soal ${i+1}/${L.length}: apa arti ini?</p><div class="ar" style="text-align:center">${x[1]}</div>`+o.map(y=>`<button class="opt">${y[2]}</button>`).join('');
+el.querySelectorAll('.opt').forEach((b,k)=>b.onclick=()=>{const ok=o[k]===x;if(ok)sc++;b.classList.add(ok?'ok':'no');el.querySelectorAll('.opt').forEach(z=>z.disabled=true);setTimeout(()=>{i++;r()},800)})})()}
+function tf(c){const m=D[c].m,L=sh(m).slice(0,5);let i=0,sc=0,el=$('#'+c+'t');
+(function r(){if(i>=L.length){el.innerHTML=`<p class="msg">Skor: ${sc}/${L.length} ${sc>3?'🌟':'💪'}</p><button class="btn g" onclick="tf('${c}')">Main lagi</button>`;return}
+const x=L[i],tr=Math.random()>.5,sh2=tr?x:sh(m.filter(y=>y!==x))[0];
+el.innerHTML=`<div class="ar" style="text-align:center">${x[1]}</div><p style="text-align:center">artinya <b>${sh2[2]}</b> ?</p><button class="btn g" data-a="1">✅ Benar</button><button class="btn p" data-a="0">❌ Salah</button><p class="msg" id="${c}tm"></p>`;
+el.querySelectorAll('button').forEach(b=>b.onclick=()=>{const ok=(b.dataset.a==='1')===tr;if(ok)sc++;$('#'+c+'tm').textContent=ok?'Tepat! 👏':'Kurang tepat: '+x[2];el.querySelectorAll('button').forEach(z=>z.disabled=true);setTimeout(()=>{i++;r()},1000)})})()}
+function mat(c){const L=sh(D[c].m).slice(0,6);let cs=sh(L.flatMap((x,i)=>[{i,t:x[1],a:1},{i,t:x[2]}])),open=[],done=0,mv=0,el=$('#'+c+'p');
+el.innerHTML='<div class="mc"></div><p class="msg"></p>';const g=el.firstChild,ms=el.lastChild;
+cs.forEach(x=>{const b=document.createElement('button');b.textContent='❓';b.onclick=()=>{if(open.length>1||b.classList.contains('done')||open.includes(b))return;b.textContent=x.t;b.classList.add('up');if(x.a)b.style.fontFamily='serif';open.push(b);b._x=x;
+if(open.length===2){mv++;const[p,q]=open;if(p._x.i===q._x.i){[p,q].forEach(z=>{z.classList.remove('up');z.classList.add('done')});open=[];if(++done===6)ms.textContent='Hebat! Selesai dalam '+mv+' langkah 🎉'}else setTimeout(()=>{[p,q].forEach(z=>{z.textContent='❓';z.classList.remove('up')});open=[]},800)}};g.append(b)});
+el.insertAdjacentHTML('beforeend','<button class="btn g" onclick="mat(\''+c+'\')">Acak ulang</button>')}
+function bld(c){const S=D[c].s;let i=0,el=$('#'+c+'s'),cur=[];
+function r(){const w=sh(S[i]);cur=[];
+el.innerHTML=`<p>Susun kata menjadi kalimat yang benar (ketuk berurutan):</p><div class="ans ar" id="${c}a"></div><div class="ar" id="${c}w" style="direction:rtl"></div><button class="btn g" id="${c}k">Cek</button><button class="btn" id="${c}u">Ulang</button><button class="btn p" id="${c}n">Soal lain</button><p class="msg" id="${c}m"></p>`;
+const A=$('#'+c+'a'),W=$('#'+c+'w');
+w.forEach(x=>{const b=document.createElement('button');b.className='w';b.textContent=x;b.onclick=()=>{cur.push(x);b.disabled=true;A.textContent=cur.join(' ')};W.append(b)});
+$('#'+c+'u').onclick=r;$('#'+c+'n').onclick=()=>{i=(i+1)%S.length;r()};
+$('#'+c+'k').onclick=()=>{const ok=cur.join(' ')===S[i].join(' ');$('#'+c+'m').textContent=ok?'Benar! 🎉':'Belum pas, coba lagi 💪';if(ok)say(cur.join(' '))}}
+r()}
+let ZC,ZI,ZS=1;
+function zoom(c,i){ZC=c;ZI=i;ZS=1;let o=$('#zm');if(!o){o=document.createElement('div');o.id='zm';o.onclick=e=>{if(e.target===o)o.style.display='none'};document.body.append(o)}o.style.display='flex';zr();say(D[c].m[i][1])}
+function zr(){const x=D[ZC].m[ZI],n=D[ZC].m.length;$('#zm').innerHTML=`<div class="zb"><button class="btn" style="float:right" onclick="$('#zm').style.display='none'">✕</button><div style="font-size:4rem;text-align:center">${x[0]}</div><div class="ar" style="text-align:center;font-size:${2.2*ZS}em">${x[1]}</div><p style="text-align:center;font-size:1.2rem"><b>${x[2]}</b></p><div style="text-align:center"><button class="btn" onclick="ZS=Math.max(.6,ZS-.25);zr()">A−</button><button class="btn" onclick="ZS=Math.min(2,ZS+.25);zr()">A+</button><button class="btn p" onclick="say(D[ZC].m[ZI][1])">🔊 Putar ulang</button></div><div style="text-align:center"><button class="btn g" onclick="ZI=(ZI+n-1)%n;zr();say(D[ZC].m[ZI][1])">◀ Sebelumnya</button><button class="btn g" onclick="ZI=(ZI+1)%n;zr();say(D[ZC].m[ZI][1])">Berikutnya ▶</button></div></div>`}
+const E={
+b1:{r:['فِي الشَّهْرِ الْمَاضِي، ذَهَبَ عَلِيٌّ وَزُمَلَاؤُهُ فِي رِحْلَةٍ سِيَاحِيَّةٍ إِلَى بُحَيْرَةِ تُوبَا.','وَصَلَ الطُّلَّابُ بِالسَّفِينَةِ إِلَى الْمِينَاءِ ثُمَّ نَصَبُوا الْخِيَامَ قُرْبَ الْغَابَةِ.','طَبَخُوا طَعَامَ الْعَشَاءِ وَسَهِرُوا حَوْلَ النَّارِ يَتَحَدَّثُونَ عَنْ أَهَمِّيَّةِ الْبِيئَةِ.','قَالَ الْمُرْشِدُ السِّيَاحِيُّ: «السَّفَرُ يُعَلِّمُنَا التَّعَاوُنَ وَالصَّبْرَ وَيُوَسِّعُ الْمَعْرِفَةَ».','شَاهَدْنَا الْمَتْحَفَ التَّارِيخِيَّ، وَوَجَدْنَا أَنَّ الْمَتْحَفَ أَكْبَرُ وَأَكْثَرُ فَائِدَةً مِنَ الْمَكْتَبَةِ.'],
+rt:['Bulan lalu, Ali dan teman-temannya pergi berwisata ke Danau Toba.','Para siswa tiba dengan kapal di pelabuhan, lalu mendirikan tenda dekat hutan.','Mereka memasak makan malam dan begadang di sekitar api unggun sambil membicarakan pentingnya lingkungan.','Pemandu wisata berkata: “Bepergian mengajarkan kita kerja sama dan kesabaran serta memperluas pengetahuan.”','Kami melihat museum sejarah, dan kami mendapati bahwa museum itu lebih besar dan lebih bermanfaat daripada perpustakaan.'],
+t:['Para siswa kelas XI telah mengunjungi museum sejarah pada minggu lalu.','Kami telah membeli tiket masuk dan berkonsultasi dengan pemandu wisata.','Pelabuhan itu lebih luas daripada stasiun kereta api.','Ali dan kawan-kawannya telah menginap di hotel yang bersih selama dua hari.','Apakah kamu (laki-laki) telah menyiapkan koper dan peta sebelum bepergian?'],
+k:['<b>Tashrif fi’il madhi:</b> ubahlah <span class="ar" style="font-size:1.2em">زَارَ</span> (telah mengunjungi) sesuai dhamir <span class="ar" style="font-size:1.2em">هُمْ، نَحْنُ، أَنَا، هِيَ</span>.','<b>Susun kalimat:</b> <span class="ar" style="font-size:1.2em">الْمَنَاظِرَ – آلَةِ – بِـ – صَوَّرَ – السَّائِحُ – التَّصْوِيرِ</span>','<b>Perbandingan:</b> buat kalimat dari <span class="ar" style="font-size:1.2em">السَّفِينَةُ</span> (kapal) dan <span class="ar" style="font-size:1.2em">الْقِطَارُ</span> (kereta) dengan kata sifat <span class="ar" style="font-size:1.2em">سَرِيعٌ</span> (cepat).','<b>Koreksi gramatika:</b> <span class="ar" style="font-size:1.2em">سَافَرُوا الطُّلَّابُ إِلَى الْجَبَلِ بِالسَّيَّارَةِ</span>','<b>Insya’:</b> tulis 3 kalimat bahasa Arab tentang pengalaman liburanmu ke tempat wisata!']},
+b2:{r:['يُمَارِسُ مَسَالٌ الرِّيَاضَةَ الْبَدَنِيَّةَ كُلَّ مَسَاءٍ فِي الْمَلْعَبِ الْمَدْرَسِيِّ.','يَجْرِي مَسَالٌ حَوْلَ الْمَلْعَبِ ثُمَّ يَرْفَعُ الْأَثْقَالَ لِتَقْوِيَةِ الْعَضَلَاتِ وَتَنْشِيطِ الدَّوْرَةِ الدَّمَوِيَّةِ.','بَعْدَ مُمَارَسَةِ الرِّيَاضَةِ، يَشْرَبُ كُوبًا مِنَ الْمَاءِ وَيَأْكُلُ الْفَوَاكِهَ الطَّازَجَةَ.','يَذْهَبُ الْمَرِيضُ إِلَى الصَّيْدَلِيَّةِ لِيَشْتَرِيَ الدَّوَاءَ بَعْدَ الْفَحْصِ الطِّبِّيِّ.','يَقُولُ الطَّبِيبُ: «مُمَارَسَةُ الرِّيَاضَةِ وَالنَّوْمُ الْمُبَكِّرُ أَنْفَعُ لِلْجِسْمِ مِنَ السَّهَرِ».'],
+rt:['Masal berolahraga setiap sore di lapangan sekolah.','Masal berlari mengelilingi lapangan, lalu mengangkat beban untuk menguatkan otot dan melancarkan peredaran darah.','Setelah berolahraga, ia minum segelas air dan makan buah-buahan segar.','Pasien pergi ke apotek untuk membeli obat setelah pemeriksaan medis.','Dokter berkata: “Berolahraga dan tidur lebih awal lebih bermanfaat bagi tubuh daripada begadang.”'],
+t:['Siswa-siswa kelas XI sedang berolahraga di lapangan untuk menjaga kesehatan.','Saya mencuci kedua tangan saya dengan antiseptik dan memakai masker.','Makanan sehat dan buah-buahan lebih bermanfaat daripada jajanan manis.','Kapan kamu (perempuan) minum obat dari dokter?','Dokter sedang memeriksa pasien yang menderita sakit gigi di rumah sakit.'],
+k:['<b>Tashrif fi’il mudhari’:</b> ubahlah <span class="ar" style="font-size:1.2em">يُمَارِسُ</span> sesuai dhamir <span class="ar" style="font-size:1.2em">أَنَا، نَحْنُ، أَنْتِ، هُمْ</span>.','<b>Susun kalimat:</b> <span class="ar" style="font-size:1.2em">الْمَاءَ – كُلَّ – يَشْرَبُ – الصَّبَاحِ – الطَّالِبُ – الصَّافِيَ – فِي</span>','<b>Koreksi gramatika:</b> <span class="ar" style="font-size:1.2em">فَاطِمَةُ يَشْرَبُ الدَّوَاءَ فِي الصَّبَاحِ</span>','<b>Kalimat tanya:</b> buat 2 kalimat tanya dengan <span class="ar" style="font-size:1.2em">كَمْ</span> (berapa) dan <span class="ar" style="font-size:1.2em">مَتَى</span> (kapan) tentang kesehatan/tidur.','<b>Insya’:</b> susun 3 kalimat menjadi paragraf pola hidup sehat: <span class="ar" style="font-size:1.2em">(أ) ثُمَّ أَتَنَاوَلُ الْغِذَاءَ الصِّحِّيَّ وَأَذْهَبُ إِلَى الْمَدْرَسَةِ. (ب) أَسْتَيْقِظُ مِنَ النَّوْمِ بَاكِرًا وَأَغْسِلُ وَجْهِي وَأَسْنَانِي. (ج) وَأَشْرَبُ كُوبًا مِنَ الْمَاءِ لِتَنْشِيطِ الْجِسْمِ.</span>']}};
+function lat(c){const e=E[c],ta='<textarea rows="2" placeholder="Tulis jawabanmu di sini…" style="width:100%;border-radius:12px;border:2px solid var(--line);padding:8px;background:var(--bg);color:var(--ink);font:inherit;margin:4px 0"></textarea>';
+$('#'+c+'x').innerHTML=`<div class="card"><h3>B. Membaca &amp; terjemahkan ke bahasa Indonesia</h3>${e.r.map((a,i)=>`<div><b>${i+6}.</b> <button class="btn" onclick="say('${a}')">🔊</button><div class="ar" style="font-size:1.25em">${a}</div>${ta}<details><summary>💡 Contoh terjemahan</summary><p>${e.rt[i]}</p></details></div>`).join('<hr>')}</div><div class="card"><h3>C. Terjemahkan ke bahasa Arab</h3>${e.t.map((a,i)=>`<div><b>${i+11}.</b> ${a}${ta}</div>`).join('')}</div><div class="card"><h3>D. Menulis (Kitabah) &amp; analisis kalimat</h3>${e.k.map((a,i)=>`<div><b>${i+16}.</b> ${a}${ta}</div>`).join('<hr>')}</div>`}
+const ALL=D.b1.m.concat(D.b2.m);D.gm={s:D.b1.s.concat(D.b2.s)};
+const A=y=>`<span class='ar' style='font-size:1.2em'>${y}</span>`,R=()=>ALL[Math.random()*ALL.length|0],X=(x,n)=>sh(ALL.filter(y=>y!==x)).slice(0,n);
+const P1=[['هُوَ','سَافَرَ'],['هُمَا','سَافَرَا'],['هُمْ','سَافَرُوا'],['هِيَ','سَافَرَتْ'],['أَنَا','سَافَرْتُ'],['نَحْنُ','سَافَرْنَا']],P2=[['هُوَ','يَشْرَبُ'],['هُمْ','يَشْرَبُونَ'],['هِيَ','تَشْرَبُ'],['أَنْتَ','تَشْرَبُ'],['أَنَا','أَشْرَبُ'],['نَحْنُ','نَشْرَبُ']];
+const GL=[['Tebak Arti','🤔'],['Tebak Arab','🔤'],['Tebak Gambar','🖼️'],['Benar atau Salah','✅'],['Kilat 30 Detik','⚡'],['Tembak Gambar','🎯'],['Terjemah Kalimat','📝'],['Tashrif Madhi','⏪'],['Tashrif Mudhari’','⏩'],['Lengkapi Kalimat','🧩'],['Kartu Pasangan','🧠'],['Kartu Gambar','🃏'],['Susun Kalimat','🔀'],['Ular Tangga (Tim)','🐍'],['Roda Tantangan (Tim)','🎡']];
+let CUR=1;
+$('#gml').innerHTML=GL.map((g,i)=>`<button class='mf' onclick='go(${i+1})'><b>${g[1]}</b>${i+1}. ${g[0]}</button>`).join('');
+function go(k){play(k);$('#gm').scrollIntoView({behavior:'smooth'})}
+function ch(g,n,sec,grid){const el=$('#gm');let i=0,sc=0,over=0,iv;
+const fin=()=>{over=1;clearInterval(iv);el.innerHTML=`<p class='msg'>Skor akhir: ${sc} ${sc>=(sec?8:n*.7)?'🎉':'💪'}</p><button class='btn g' onclick='play(CUR)'>Main lagi</button>`};
+if(sec){const e0=Date.now()+sec*1e3;iv=setInterval(()=>{const r=Math.ceil((e0-Date.now())/1e3),e=$('#tm');if(r<=0)fin();else if(e)e.textContent='⏱ '+r+' dtk'},300)}
+(function r(){if(over)return;if(!sec&&i>=n)return fin();const x=g();
+el.innerHTML=`<p>${sec?'<b id=tm></b> · ':''}Soal ${i+1}${sec?'':'/'+n} · Skor ${sc}</p><div style='text-align:center'>${x.q}</div><div class='${grid?'mc':''}'>${x.o.map(o=>`<button class='${grid?'':'opt'}'${grid?' style=font-size:2rem':''}>${o}</button>`).join('')}</div>`;
+el.querySelectorAll('.opt,.mc button').forEach((b,k)=>b.onclick=()=>{const ok=x.o[k]===x.a;if(ok)sc++;b.style.background=ok?'#d8f5e3':'#fde0e5';b.style.color='#222';el.querySelectorAll('button').forEach(z=>z.disabled=true);setTimeout(()=>{i++;r()},sec?350:750)})})()}
+function pairs(k){const L=sh(ALL).slice(0,6);let cs=sh(L.flatMap((x,i)=>[{i,t:k?x[0]:x[1]},{i,t:k?x[1]:x[2]}])),open=[],done=0,mv=0,el=$('#gm');
+el.innerHTML=`<div class='mc'></div><p class='msg'></p><button class='btn g' onclick='play(CUR)'>Acak ulang</button>`;const g=el.children[0],ms=el.children[1];
+cs.forEach(x=>{const b=document.createElement('button');b.textContent='❓';b.onclick=()=>{if(open.length>1||b.classList.contains('done')||open.includes(b))return;b.textContent=x.t;b.classList.add('up');open.push(b);b._x=x;if(open.length===2){mv++;const[p,q]=open;if(p._x.i===q._x.i){[p,q].forEach(z=>{z.classList.remove('up');z.classList.add('done')});open=[];if(++done===6)ms.textContent='Hebat! Selesai dalam '+mv+' langkah 🎉'}else setTimeout(()=>{[p,q].forEach(z=>{z.textContent='❓';z.classList.remove('up')});open=[]},800)}};g.append(b)})}
+function snl(){const el=$('#gm'),P=[0,0],T=['🔴 Tim A','🔵 Tim B'],J={3:9,7:14,12:5,17:8};let t=0;
+function draw(m,q){el.innerHTML=`<div class='mc' style='grid-template-columns:repeat(5,1fr)'>${[...Array(20)].map((_,i)=>`<button disabled style='min-height:46px'>${i+1}${J[i+1]?(J[i+1]>i+1?'🪜':'🐍'):''}<br>${P[0]===i+1?'🔴':''}${P[1]===i+1?'🔵':''}</button>`).join('')}</div><p class='msg'>${m}</p><div id='sq'></div>`;
+if(!q){const b=document.createElement('button');b.className='btn p';b.textContent='🎲 '+T[t]+': lempar dadu';b.onclick=roll;$('#sq').append(b)}}
+function roll(){const d=1+Math.random()*6|0,x=R(),o=sh([x,...X(x,3)]);draw(T[t]+' dapat '+d+' 🎲 Jawab dulu!',1);
+$('#sq').innerHTML=`<div class='ar' style='text-align:center'>${x[1]}</div>`+o.map(y=>`<button class='opt'>${y[2]}</button>`).join('');
+$('#sq').querySelectorAll('button').forEach((b,k)=>b.onclick=()=>{let m;if(o[k]===x){P[t]+=d;if(J[P[t]])P[t]=J[P[t]];m='✅ Benar! '+T[t]+' di kotak '+Math.min(P[t],20);if(P[t]>=20){P[t]=20;draw('🎉 '+T[t]+' menang!',1);$('#sq').innerHTML=`<button class='btn g' onclick='snl()'>Main lagi</button>`;return}}else m='❌ Salah. Arti: '+x[2];t=1-t;draw(m)})}
+draw('Lempar dadu, jawab soal, dan sampai kotak 20! 🪜 naik, 🐍 turun.')}
+function roda(){const el=$('#gm'),S=[0,0],C=['Terjemahkan ke bahasa Indonesia','Ucapkan kata ini 3 kali dengan fasih','Buat 1 kalimat bahasa Arab dengan kata ini','Sebutkan kata ini dalam kalimat fi’il madhi'];
+function sp(){const x=R(),c=C[Math.random()*C.length|0];
+el.innerHTML=`<p>🔴 Tim A: <b>${S[0]}</b> · 🔵 Tim B: <b>${S[1]}</b></p><div class='card' style='text-align:center'><div class='ar'>${x[1]}</div><button class='btn' onclick="say('${x[1]}')">🔊</button><p><b>Tantangan:</b> ${c}</p><details><summary>👁 Lihat arti</summary><span style='font-size:2rem'>${x[0]}</span> <b>${x[2]}</b></details></div><button class='btn g' id='ra'>+1 Tim A</button><button class='btn p' id='rb'>+1 Tim B</button><button class='btn' id='rn'>🎡 Putar lagi</button>`;
+$('#ra').onclick=()=>{S[0]++;sp()};$('#rb').onclick=()=>{S[1]++;sp()};$('#rn').onclick=sp}
+sp()}
+function play(k){CUR=k;const e=$('#gm');e.innerHTML='';
+const RS=()=>['b1','b2'].flatMap(c=>E[c].r.map((a,i)=>[a,E[c].rt[i]])),SS=D.gm.s;
+switch(k){
+case 1:case 5:ch(()=>{const x=R();return{q:`<div class='ar'>${x[1]}</div>`,o:sh([x,...X(x,3)]).map(y=>y[2]),a:x[2]}},8,k==5?30:0);break;
+case 2:ch(()=>{const x=R();return{q:`<b style='font-size:1.4rem'>${x[2]}</b>`,o:sh([x,...X(x,3)]).map(y=>A(y[1])),a:A(x[1])}},8);break;
+case 3:ch(()=>{const x=R();return{q:`<div style='font-size:4rem'>${x[0]}</div>`,o:sh([x,...X(x,3)]).map(y=>A(y[1])),a:A(x[1])}},8);break;
+case 4:ch(()=>{const x=R(),tr=Math.random()>.5,s=tr?x:X(x,1)[0];return{q:`<div style='font-size:3rem'>${x[0]}</div><div class='ar'>${x[1]}</div><p>artinya <b>${s[2]}</b> ?</p>`,o:['✅ Benar','❌ Salah'],a:tr?'✅ Benar':'❌ Salah'}},8);break;
+case 6:ch(()=>{const x=R();return{q:`<div class='ar'>${x[1]}</div><p>Tembak gambarnya!</p>`,o:sh([x,...X(x,5)]).map(y=>y[0]),a:x[0]}},8,0,1);break;
+case 7:ch(()=>{const P=RS(),x=P[Math.random()*P.length|0],d=sh(P.filter(y=>y!==x)).slice(0,3);return{q:`<div class='ar' style='font-size:1.2em'>${x[0]}</div>`,o:sh([x,...d]).map(y=>y[1]),a:x[1]}},6);break;
+case 8:case 9:{const P=k==8?P1:P2;ch(()=>{const x=P[Math.random()*6|0],f=[...new Set(P.map(y=>y[1]))].filter(f=>f!==x[1]);return{q:`<p>Pilih bentuk <b>${k==8?'fi’il madhi سَافَرَ':'fi’il mudhari’ يَشْرَبُ'}</b> untuk:</p><div class='ar'>${x[0]}</div>`,o:sh([x[1],...sh(f).slice(0,3)]).map(A),a:A(x[1])}},8);break}
+case 10:ch(()=>{const s=SS[Math.random()*SS.length|0],r=Math.random()*s.length|0,w=s[r],d=[...new Set(SS.flat().filter(y=>!s.includes(y)))];return{q:`<div class='ar'>${s.map((y,i)=>i===r?'_____':y).join(' ')}</div>`,o:sh([w,...sh(d).slice(0,3)]).map(A),a:A(w)}},6);break;
+case 11:pairs(0);break;case 12:pairs(1);break;
+case 13:e.innerHTML=`<div id='gms'></div>`;bld('gm');break;
+case 14:snl();break;case 15:roda();break}}
+chap('b1');chap('b2');show('cover');
+</script>
+</body>
+</html>
